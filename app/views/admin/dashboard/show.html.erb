@@ -1,25 +1,32 @@
-<h1>Admin Dashboard</h1>
-<div class="container">
-  <h2 class="text-center">Store Stats</h2>
-  <div class="row">
-    <div class="col">
-      <div class="card text-center">
-        <div class="card-body">
-          <h5>Products</h5>
-          <p><%= @product_count %></p>
+<section class="admin-dashboard-index">
+
+  <header class="page-header">
+    <h1>Admin &raquo; Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <h2 class="text-center">Store Stats</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5>Products</h5>
+            <p><%= @product_count %></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5>Categories</h5>
+            <p><%= @category_count %></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card text-center">
-        <div class="card-body">
-          <h5>Categories</h5>
-          <p><%= @category_count %></p>
-        </div>
-      </div>
+    <div class="text-center" style="margin-top: 1em">
+      <%= link_to "View All Products", admin_products_path, class: "btn btn-primary" %>
     </div>
   </div>
-  <div class="text-center" style="margin-top: 1em">
-    <%= link_to "View All Products", admin_products_path, class: "btn btn-primary" %>
-  </div>
-</div>
+
+</section>
