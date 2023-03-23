@@ -1,0 +1,17 @@
+<section class="sessions-new">
+
+  <header class="page-header">
+    <h1>Login</h1>
+  </header>
+
+  <div class="container">
+    <div class="col-md-5">
+      <%= form_tag '/login' do %>
+        Email: <%= text_field_tag :email, nil, class: "form-control" %>
+        Password: <%= password_field_tag :password, nil, class: "form-control" %>
+        <%= submit_tag "Submit", class: "btn btn-primary mt-1" %>
+      <% end %>
+    </div>
+  </div>
+
+</section>
