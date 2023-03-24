@@ -2,6 +2,13 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Screenshots
+
+!["Home Page"](docs/homepage.png)
+!["Sold-out Badge"](docs/soldout_badge.png)
+!["Sign-up Page"](docs/signup.png)
+!["Admin Dashboard Page"](docs/admin_dash.png)
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
